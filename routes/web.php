@@ -20,5 +20,3 @@ Route::get('/', function () {
 Route::get('/user/{name}/{lastname}', function ($name,$lastname) {
     return 'User name: '.$name.' '.$lastname;
 });
-
-Route::get('/user/{id}','App\Http\Controllers\StudentController@display');
